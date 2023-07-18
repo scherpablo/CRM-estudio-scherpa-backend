@@ -1,11 +1,11 @@
 import nodemailer from 'nodemailer';
 
-const emailHost = process.env.PROD_EMAIL_HOST || process.env.DEV_EMAIL_HOST;
-const emailPort = process.env.PROD_EMAIL_PORT || process.env.DEV_EMAIL_PORT;
-const emailUser = process.env.PROD_EMAIL_USER || process.env.DEV_EMAIL_USER;
-const emailPass = process.env.PROD_EMAIL_PASS || process.env.DEV_EMAIL_PASS;
+const emailHost = process.env.DEV_FRONTEND_URL || process.env.PROD_EMAIL_HOST;
+const emailPort = process.env.DEV_EMAIL_PORT || process.env.PROD_EMAIL_PORT;
+const emailUser = process.env.DEV_EMAIL_USER || process.env.PROD_EMAIL_USER;
+const emailPass = process.env.DEV_EMAIL_PASS || process.env.PROD_EMAIL_PASS;
 
-const frontendUrl = process.env.PROD_FRONTEND_URL || process.env.DEV_FRONTEND_URL;
+const frontendUrl = process.env.DEV_FRONTEND_URL || process.env.PROD_FRONTEND_URL;
 
 const emailRegister = async (datos) => {
     const transporter = nodemailer.createTransport({

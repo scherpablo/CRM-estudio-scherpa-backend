@@ -18,7 +18,7 @@ const clientsSchema = new mongoose.Schema({
     },
     birthdate: {
         type: Date,
-        required: false,
+        required: true,
         default: Date.now(),
         trim: true
     }, 

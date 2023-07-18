@@ -23,7 +23,7 @@ const expedientSchema = new mongoose.Schema({
     },
     startDate: {
         type: Date,
-        required: false,
+        required: true,
         default: Date.now(),
         trim: true
     },

@@ -10,7 +10,7 @@ app.use(express.json());
 
 connectDB();
 
-const allowedDomains = [process.env.PROD_FRONTEND_URL || process.env.DEV_FRONTEND_URL];
+const allowedDomains = [process.env.DEV_FRONTEND_URL || process.env.PROD_FRONTEND_URL];
 
 const corsOptions = {
     origin: function (origin, callback) {

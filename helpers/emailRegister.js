@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-const emailHost = process.env.DEV_FRONTEND_URL || process.env.PROD_EMAIL_HOST;
+const emailHost = process.env.DEV_EMAIL_HOST || process.env.PROD_EMAIL_HOST;
 const emailPort = process.env.DEV_EMAIL_PORT || process.env.PROD_EMAIL_PORT;
 const emailUser = process.env.DEV_EMAIL_USER || process.env.PROD_EMAIL_USER;
 const emailPass = process.env.DEV_EMAIL_PASS || process.env.PROD_EMAIL_PASS;
